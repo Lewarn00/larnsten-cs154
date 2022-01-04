@@ -1,0 +1,17 @@
+Question 1
+
+Variable instance,  main thread,  peer thread 0, peer thread 1
+cnt.t0              no            yes            no
+cnt.t1              no            no             yes
+i.m                 yes           yes            yes 
+msgs.m              yes           yes            yes
+myid.t0             no            yes            no
+myid.t1             no            no             yes
+
+Question 2
+
+A. Thread 1 can hold (a,b), (a,c), and (a,d). Thread 2 can hold (d,c), (d,b), and (c,b).
+
+B. There is no overlap between the sets of pairs of mutexes.
+
+C. No, since there is no overlap there is no potential for deadlock. 

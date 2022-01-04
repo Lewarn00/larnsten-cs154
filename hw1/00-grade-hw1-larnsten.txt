@@ -1,0 +1,21 @@
+larnsten hw1 grade: 18/18
+
+Graded files from svn revision 5
+
+--------------------------------------
+Question 1 points and comments: 10/10
+Nice!
+Graded by: Ethan Mertz (ethanmertz)
+--------------------------------------
+
+Question 2 points and comments: 8/8
+
+E. multiplication isn't allowed per the bit-level integer coding rules
+in the textbook. Instead, use << 3.
+No pts taken off as it's bonus question
+
+Graded by: Yifan Liu (liuyifan)
+--------------------------------------
+
+If you believe there is an error in how you were graded, you have a week,
+starting from when this grade was returned, to notify us via email.

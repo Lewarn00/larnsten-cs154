@@ -1,0 +1,15 @@
+Question 1
+
+A. ttttttttssbb
+
+B. 
+Operation Address Hit/Miss? Value
+Read      0x833   Hit       0xD0 
+Read      0x00A   Hit       0x4A   
+Read      0x006   Hit       0x46
+Read      0xFFE   Hit       0x03
+Read      0x54D   Miss      Unkown   
+Write     0x54E   Miss      n/a
+Write     0x007   Hit       n/a   
+Read      0x44C   Miss      Unkown
+(Bonus) Read 0xFFE Miss     Unkown

@@ -1,0 +1,20 @@
+Question 1 
+
+A. The value result is held in register %rax, mask is held in %rdx,
+x is held in  %rdi, and n is held in %rsi.
+B. The initial value of result is 0 (%rax), and the initial value of mask is 5 (%rdx).
+C. The test condition is that the mask is greater than 0.
+D. The shift on line 10 updates mask to mask << n.
+E. The result is updated to result | (x & mask).
+(Bonus) F.
+1. 0
+2. 5
+3. mask > 0
+4. mask << n
+5. |= (x & mask)
+
+Question 2
+
+A.  The address of element A[i][j][k] is Xa + L(T(S * i + j) + k)
+
+

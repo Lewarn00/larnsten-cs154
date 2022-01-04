@@ -1,0 +1,15 @@
+larnsten hw7 grade: 14/15
+
+Graded files from svn revision 62
+
+--------------------------------------
+Question 1 points and comments: 14/15
+
+-4 BC, no explanation of the race conditions that caused this output
++3 D
+
+Graded by: Henry Filosa (hfilosa)
+--------------------------------------
+
+If you believe there is an error in how you were graded, you have a week,
+starting from when this grade was returned, to notify us via email.

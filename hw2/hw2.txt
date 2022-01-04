@@ -1,0 +1,23 @@
+Question 1 
+
+A. (%rcx), Value: 0x09, Mode: Indirect
+B. 560, Value: 0x54, Mode: Absolute
+C. (%rax,%rsi), Value: 0xBC, Mode: Indexed
+D. 0x108(%rdi,%rdx,0x20), Value: 0x42, Mode: Scaled Indexed 
+E. $251, Value: 0xFB, Mode: Immediate
+F. (,%rsi,0x45), Value: 0x42, Mode: Scaled Indexed 
+(Bonus) G. 0x14(%rax), Value: unkown, Mode: The bytes of 0x09 (00001001) that 
+are read will change depending on if the machine is big or little endian.  
+
+Question 2
+
+A. incq %rsi, Destination: %rsi, Value: 0x9
+B. decq (%rax), Destination: 0x210, Value: 0xAA
+C. notq %rdx, Destination: %rdx, Value: 0xFFFFFFFFFFFFFFFE
+D. shlq %rsi,(%rcx), Destination: 0x220, Value: 0x900
+E. subq $0x100,%rcx, Destination: %rcx, Value: 0x120
+F. imulq %rdi,(%rax,%rsi), Destination: 0x218, Value: 0xBC00
+G. orq (%rcx),%rax, Destination: %rax, Value: 0x219
+H. shrq %rdx,(%rdi,%rsi,37), Destination: 0x228, Value: 0x21
+I. xorq %rbx,%rbx, Destination: %rbx, Value: 0
+J. subq 0x220,%rdi, Destination: %rdi, Value: 0xF7

@@ -1,0 +1,18 @@
+Question 1
+
+A. System calls are used to request services from the kernel. Thus they take place in kernel mode, while library calls are the same as regular C function calls and take place in user mode. The assembly instructions for system calls differ from library calls in that system calls on x86-64 systems are denoted by the instruction syscall. All arguments for system calls are passed into general-purpose registers rather than the stack. 
+
+B. 
+System calls: pause (Suspends the process until a signal arrives), fork (Creates a new child process that runs beside the parent process), read (reads up to a given number of bytes from the file descriptor), dup2 (copies the old file descriptor using a specified file descriptor number)
+
+Library functions: fclose (closes the current file), fseek (sets the position of the file pointer to a given offset), fread (reads the data from a file into an array), log (returns the natural logarithm of the input)
+
+Question 2
+
+A. 
+Exception number,  Exception handler address
+0                  0xC0015200 (DivByZero)
+
+B. The CPU is currently executing the code at address 0x08031000. When the CPU detects that the divisor is 0 it will trigger interrupt number 0. The CPU will then consult the exception table for exception number 0, which was given the address of divideByZero (0xC0015200) during boot up. It will then jump to execute the function at address 0xC0015200. Thus, the value of %eip will be set to 0xC0015200 and the function divideByZero will be executed, killing the current process. 
+
+

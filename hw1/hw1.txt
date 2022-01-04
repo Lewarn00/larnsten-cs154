@@ -1,0 +1,14 @@
+Question 1 
+
+foo = 1;
+endian = !(*(char *) &foo);
+
+This solution assigns a value of 1 to int foo. The first byte of the integer is then retrieved by casting the address as a char pointer. This byte is 0 in a big-endian machine and 1 in a little-endian machine. 
+
+Question 2
+
+A. !!x
+B. !!~x
+C. !!(x & 0xF)
+D. !!(x & 0xAAAAAAAA)
+E. !!(~(x >> (4 + 8 * (sizeof(x) - 1))) & 0xF)

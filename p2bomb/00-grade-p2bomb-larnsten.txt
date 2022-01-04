@@ -1,0 +1,16 @@
+larnsten p2bomb grade: 38/40
+bomb390 larnsten Tue May 5 20:50 valid
+    Defused:   4
+    Explosion: 5
+    Score:     38
+
+###### bomb390 created: Sun May  3 20:27:26 2020 ######
+Sun May  3 22:54:04 2020: phase 1 exploded: 'You must know where you stop and the world begins'
+Sun May  3 23:36:33 2020: phase 1 defused: 'You must know where you stop and the world begins cs154'
+Mon May  4 17:50:15 2020: phase 1 exploded: 'You must know where the world stops and you begin cs154'
+Mon May  4 19:05:37 2020: phase 2 exploded: '2 4 7 13 24 46'
+Mon May  4 19:48:16 2020: phase 2 exploded: '1 2 5 9 16'
+Mon May  4 20:11:20 2020: phase 2 defused: '1 2 5 9 16 27'
+Mon May  4 20:25:32 2020: phase 3 defused: '1 5505'
+Tue May  5 20:45:22 2020: phase 1 exploded: 'You must know where you stop and the world beings cs154'
+Tue May  5 20:50:26 2020: phase 4 defused: '36 3'

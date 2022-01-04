@@ -1,0 +1,26 @@
+larnsten hw5 grade: 31/31
+
+Graded files from svn revision 37
+
+--------------------------------------
+Question 1 points and comments: 16/16
+
+Nice!
+
+Graded by: Anant Matai (amatai)
+--------------------------------------
+
+Question 2 points and comments: 15/15
+
+B.
+I see you understand this clearly, but a few reminders:
+For the last step, specifically speaking, instruction at 0xC0015200, the
+beginning of the exception handler will be executed
+Besides, the CPU itself doesn't "jump to execute"; it just faithfully executes
+the instruction at %eip.
+
+Graded by: Yifan Liu (liuyifan)
+--------------------------------------
+
+If you believe there is an error in how you were graded, you have a week,
+starting from when this grade was returned, to notify us via email.

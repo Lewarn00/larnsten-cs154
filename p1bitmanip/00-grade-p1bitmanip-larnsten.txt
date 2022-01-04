@@ -1,0 +1,75 @@
+larnsten p1bitmanip grade: 103/103 
+ 
+https://phoenixforge.cs.uchicago.edu/svn/larnsten-cs154-spr-20/p1bitmanip 
+Grading revision: 7 
+
+$ make
+gcc -O -Wall -lm -o btest bits.c btest.c decl.c tests.c
+bits.c: In function 'addOK':
+bits.c:150:10: warning: suggest parentheses around operand of '!' or change '|' to '||' or '!' to '~' [-Wparentheses]
+   return !!(x^y) | (!(x^z) & !(y^z));
+          ^~~~~~~
+btest.c: In function 'test_function':
+btest.c:332:23: warning: 'arg_test_range[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (arg_test_range[1] < 1)
+         ~~~~~~~~~~~~~~^~~
+gcc -O -Wall -o ishow ishow.c
+
+$ ./driver.pl
+1. Running './dlc -z' to identify coding rules violations.
+
+2. Compiling and running './btest -g' to determine correctness score.
+gcc -O -Wall -lm -o btest bits.c btest.c decl.c tests.c 
+bits.c: In function 'addOK':
+bits.c:150:10: warning: suggest parentheses around operand of '!' or change '|' to '||' or '!' to '~' [-Wparentheses]
+ 
+          ^      
+btest.c: In function 'test_function':
+btest.c:332:23: warning: 'arg_test_range[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (arg_test_range[1] < 1)
+         ~~~~~~~~~~~~~~^~~
+
+3. Running './dlc -Z' to identify operator count violations.
+
+4. Compiling and running './btest -g -r 2' to determine performance score.
+gcc -O -Wall -lm -o btest bits.c btest.c decl.c tests.c 
+save-bits.c: In function 'addOK':
+save-bits.c:150:10: warning: suggest parentheses around operand of '!' or change '|' to '||' or '!' to '~' [-Wparentheses]
+   return !!(x^y) | (!(x^z) & !(y^z));
+          ^~~~~~~
+btest.c: In function 'test_function':
+btest.c:332:23: warning: 'arg_test_range[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     if (arg_test_range[1] < 1)
+         ~~~~~~~~~~~~~~^~~
+
+
+5. Running './dlc -e' to get operator count of each function.
+
+Correctness Results	Perf Results
+Points	Rating	Errors	Points	Ops	Puzzle
+4	4	0	2	3	absVal
+3	3	0	2	13	addOK
+2	2	0	2	9	allEvenBits
+4	4	0	2	5	bang
+4	4	0	2	25	bitCount
+1	1	0	2	3	bitNor
+2	2	0	2	15	byteSwap
+3	3	0	2	7	conditional
+3	3	0	2	6	ezThreeFourths
+2	2	0	2	6	fitsBits
+2	2	0	2	3	getByte
+4	4	0	2	15	greatestBitPos
+2	2	0	2	2	implication
+3	3	0	2	13	isAsciiDigit
+2	2	0	2	2	isEqual
+3	3	0	2	14	isLess
+3	3	0	2	2	isNonNegative
+4	4	0	2	10	isPower2
+1	1	0	2	6	isTmin
+1	1	0	2	1	minusOne
+3	3	0	2	10	rotateLeft
+3	3	0	2	12	satMul2
+
+Score = 103/103 [59/59 Corr + 44/44 Perf] (182 total operators)
+
+Final Grade: 103/103

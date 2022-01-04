@@ -1,0 +1,19 @@
+Quesiton 1
+
+A. Yes, P1 will be loaded into address range 0-2.
+B. Yes, P2 will be loaded into address range 6-8.
+C. Since address 5 is already in use, the only open addresses are 3, 4, and 9. Thus, there is no open block of 3MB to load P3.
+D. The internal fragmentation for P1 is 2MB (since P1 requires 1MB), P2 is 1MB (since P2 requires 2MB), and P3 is n/a. Therefore, the total internal fragmentation is 3MB. 
+E. The addresses 3, 4, and 9 cannot be used, resulting in 3MB of external fragmentation.
+
+Question 2
+
+A.
+Access &                                       Physical  Success
+logical Segment Offset   Base        Offset    address   or
+address bit(s)  bit(s)   (in hex)    (in hex)  (in hex)  Error
+r 0xF4 = 1 |  1110100 ;  0x13   +    0x74   =  0x87     (S)
+w 0x38 = 0 |  0111000 ;  0x9A   +    0x38   =  0xD2     (E)
+r 0x12 = 0 |  0010010 ;  0x9A   +    0x12   =  0xAC     (S)
+
+B. Since the computer provides 8-bit addressing and 1 bit is used for the segment bit, the largest possible size of a segment is 2^7 bytes. 
